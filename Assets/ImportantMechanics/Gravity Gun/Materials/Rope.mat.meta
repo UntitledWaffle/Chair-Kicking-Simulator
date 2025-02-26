@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c76d5ba908c69854db4b08a0e114693a
+labels:
+- GravityGun
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145604
+  packageName: Gravity Gun
+  packageVersion: 1.0
+  assetPath: Assets/Gravity Gun/Materials/Rope.mat
+  uploadId: 321174

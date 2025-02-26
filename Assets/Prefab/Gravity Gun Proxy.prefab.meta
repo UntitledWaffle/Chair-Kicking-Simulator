@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d74e9758dadacde4db03c197afeae262
+labels:
+- GravityGun
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145604
+  packageName: Gravity Gun
+  packageVersion: 1.0
+  assetPath: Assets/Prefab/Gravity Gun Proxy.prefab
+  uploadId: 321174

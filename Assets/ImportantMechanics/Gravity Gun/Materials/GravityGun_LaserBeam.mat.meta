@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d530d7a0fc75a164590259666f40d3b3
+labels:
+- GravityGun
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145604
+  packageName: Gravity Gun
+  packageVersion: 1.0
+  assetPath: Assets/Gravity Gun/Materials/GravityGun_LaserBeam.mat
+  uploadId: 321174

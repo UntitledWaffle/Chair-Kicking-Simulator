@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: eb4cfa3e82d1cd84a87a10049ebc71a7
+labels:
+- GravityGun
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 145604
+  packageName: Gravity Gun
+  packageVersion: 1.0
+  assetPath: Assets/Gravity Gun/Script/GravityGun.cs
+  uploadId: 321174
