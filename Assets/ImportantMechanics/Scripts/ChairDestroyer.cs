@@ -4,10 +4,16 @@ public class DestroyOnContact : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (gameObject)
+        if (other.gameObject) // Check if something entered the trigger
         {
-            Destroy(other.gameObject);
             print("Hit Barrier");
+
+            if (other.CompareTag("Chair")) 
+            {
+                ObjectCounter.instance.RemoveObject(); 
+            }
+
+            Destroy(other.gameObject); 
         }
     }
 }

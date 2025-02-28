@@ -5,6 +5,7 @@ public class ObjectCounter : MonoBehaviour
 {
     public static ObjectCounter instance;
     private int objectCount;
+    public string nextSceneName; // Set this in the Inspector
 
     private void Awake()
     {
@@ -36,6 +37,19 @@ public class ObjectCounter : MonoBehaviour
         if (objectCount <= 0)
         {
             Debug.Log("You Win!");
+            LoadNextScene();
+        }
+    }
+
+    private void LoadNextScene()
+    {
+        if (!string.IsNullOrEmpty(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            Debug.LogError("Next scene name is not set!");
         }
     }
 }
