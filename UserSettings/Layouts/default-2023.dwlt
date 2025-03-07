@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 126
+  controlID: 2057
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 55
+  controlID: 2058
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 56
+  controlID: 2059
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,8 +296,8 @@ MonoBehaviour:
     y: 0
     width: 419
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -372,7 +372,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -444,7 +444,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f410f9ff2611f9ff4e19f9ffec67f9fffa67f9ff9e75f9ff74a5f9ff82a5f9ff2c48faff12b2faff828afbffaa45fcff7e69fcff4a3afdff6862fdff6a32feffd805ffffac29ffffbefaffff34ae130066971a004aef1d00062a1e006a6e1e0034f11e00e8051f00ea1c1f00fe301f0024941f00
+      m_ExpandedIDs: 1475f9fff6c2f9ff4693faff12dffaff1efcfbff7849fcffd667fdff68b7fdff6888feff36aefeff84d7feffbefaffffacc60100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1009,9 +1009,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -25.815863, y: 15.846004, z: 3.768334}
+    m_Target: {x: -3.138534, y: 7.6331573, z: 6.0839887}
     speed: 2
-    m_Value: {x: -25.815863, y: 15.846004, z: 3.768334}
+    m_Value: {x: -3.138534, y: 7.6331573, z: 6.0839887}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1057,9 +1057,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.1323048, y: -0.71224713, z: 0.1399384, w: -0.67483944}
+    m_Target: {x: -0.020801526, y: 0.9746881, z: -0.10150586, w: -0.19762394}
     speed: 2
-    m_Value: {x: -0.1323186, y: -0.7123214, z: 0.13995299, w: -0.6749098}
+    m_Value: {x: -0.020803519, y: 0.9747815, z: -0.10151559, w: -0.19764288}
   m_Size:
     m_Target: 0.5568597
     speed: 2
@@ -1171,7 +1171,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefab
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1181,16 +1181,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\xaicdb1\Documents\GitHub\Chair-Kicking-Simulator
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 294}
-    m_SelectedIDs: b0cc0200
-    m_LastClickedID: 183472
-    m_ExpandedIDs: 00000000d4ca0200d6ca0200d8ca0200accc0200aecc02008a880e0094880e0000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 102}
+    m_SelectedIDs: c0cc0200
+    m_LastClickedID: 183488
+    m_ExpandedIDs: 00000000daca0200dcca0200deca0200e0ca0200e2ca020000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1218,7 +1218,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d4ca0200d6ca0200d8ca0200
+    m_ExpandedIDs: 00000000daca0200dcca0200deca0200e0ca0200e2ca020000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
