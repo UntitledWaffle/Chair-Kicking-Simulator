@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 128
+  controlID: 30977
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 57
+  controlID: 30978
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 58
+  controlID: 30979
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,7 +188,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 159
+    width: 200
     height: 680
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 159
+    x: 200
     y: 0
-    width: 636
+    width: 542
     height: 680
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -238,9 +238,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 795
+    x: 742
     y: 0
-    width: 706
+    width: 759
     height: 680
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -324,9 +324,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2715
+    x: 2662
     y: 73
-    width: 704
+    width: 757
     height: 659
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 704, y: 638}
+  m_TargetSize: {x: 757, y: 638}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -360,8 +360,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -352
-    m_HBaseRangeMax: 352
+    m_HBaseRangeMin: -378.5
+    m_HBaseRangeMax: 378.5
     m_VBaseRangeMin: -319
     m_VBaseRangeMax: 319
     m_HAllowExceedBaseRangeMin: 1
@@ -381,23 +381,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 704
+      width: 757
       height: 638
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 352, y: 319}
+    m_Translation: {x: 378.5, y: 319}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -352
+      x: -378.5
       y: -319
-      width: 704
+      width: 757
       height: 638
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 704, y: 659}
+  m_LastWindowPixelSize: {x: 757, y: 659}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -426,7 +426,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 73
-    width: 158
+    width: 199
     height: 659
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -442,23 +442,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: aa530a00
       m_LastClickedID: 0
-      m_ExpandedIDs: b236fdffbefaffff
+      m_ExpandedIDs: 42ace0ffa26be3fff43be4ffa055e4ff325fe4ff865fe4ff68bbe4ff427ae7ffb8c5e7ffa495e8ff82aee8ffa2b9e8ff5835e9ff1a52e9fff0a0e9ff70b5e9ff7eb5e9ff22bee9ff9efbeaffa4fbeaffb6fbeaffeafbeaffecfbeaffd693edff20aeedff24aeedff32aeedffa8aeedffda7eeeff9acaeeffd289f1ffaee1f1ffbeedf1ff705af2ff501af5ff606df5ff6e6df5ff6c70f5ff4e72f5ff7273f5fffc73f5ff90c4f5ffdebbf6ff9c4ef7ffec56f7ff0071f7fff0d6f7fff4d6f7ff02d7f7ff0a04fafffc1ffdffbefaffffbcb5030014cf03003a1731006e333100604e3d0078553d00d61a490060cf4900
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Chair 1 (2) Variant (1)
+        m_OriginalName: Chair 1 (2) Variant (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -1517764
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -489,9 +489,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2079
+    x: 2120
     y: 73
-    width: 634
+    width: 540
     height: 659
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1009,9 +1009,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.1524256, y: 0.10723222, z: -4.3915615}
+    m_Target: {x: -20.655956, y: 133.77219, z: -150.6029}
     speed: 2
-    m_Value: {x: 1.1524256, y: 0.107232206, z: -4.3915615}
+    m_Value: {x: -20.655933, y: 133.77213, z: -150.60284}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1057,13 +1057,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.09867776, y: -0.67441845, z: 0.09195593, w: -0.72574943}
+    m_Target: {x: -0.37062204, y: -0.17838089, z: 0.072490305, w: -0.90844107}
     speed: 2
-    m_Value: {x: -0.09855225, y: -0.67559224, z: 0.092115566, w: -0.7248292}
+    m_Value: {x: -0.37100008, y: -0.17431723, z: 0.07083239, w: -0.9093708}
   m_Size:
-    m_Target: 2.704823
+    m_Target: 0.7127197
     speed: 2
-    m_Value: 2.704823
+    m_Value: 0.7010176
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1171,7 +1171,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefab
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1181,16 +1181,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\xaicdb1\Documents\GitHub\Chair-Kicking-Simulator
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 102}
-    m_SelectedIDs: f6970300
-    m_LastClickedID: 235510
-    m_ExpandedIDs: 000000001496030016960300189603001a9603001c96030000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 150}
+    m_SelectedIDs: 8eaf0300
+    m_LastClickedID: 241550
+    m_ExpandedIDs: 00000000a8ad0300aaad0300acad0300aead0300b0ad030088af030000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1218,7 +1218,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001496030016960300189603001a9603001c960300
+    m_ExpandedIDs: 00000000a8ad0300aaad0300acad0300aead0300b0ad030000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
