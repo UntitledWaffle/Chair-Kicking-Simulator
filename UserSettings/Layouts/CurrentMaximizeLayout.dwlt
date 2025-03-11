@@ -94,7 +94,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -193,10 +193,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 159
+    width: 200
     height: 680
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -225,7 +225,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 73
-    width: 158
+    width: 199
     height: 659
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -241,23 +241,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 34bf0800
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1efcfbff7849fcffd667fdff68b7fdff6888feff36aefeff84d7feffbefaffffacc60100
+      m_ExpandedIDs: f0d6f7fff4d6f7ff02d7f7ff0a04fafffc1ffdffbefaffffbcb5030014cf0300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: L
+        m_OriginalName: L
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -536650
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -282,12 +282,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 159
+    x: 200
     y: 0
-    width: 636
+    width: 595
     height: 680
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -314,9 +314,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2079
+    x: 2120
     y: 73
-    width: 634
+    width: 593
     height: 659
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -708,10 +708,10 @@ MonoBehaviour:
       containerId: Floating
       floating: 1
       collapsed: 0
-      displayed: 1
-      snapOffset: {x: 0, y: 487}
+      displayed: 0
+      snapOffset: {x: -633, y: -212}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 3
       id: UnityEditor.SceneViewCameraOverlay
       index: 0
       layout: 4
@@ -834,9 +834,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.711348, y: 47.7941, z: 97.01951}
+    m_Target: {x: 20.430832, y: -21.720509, z: -29.571205}
     speed: 2
-    m_Value: {x: -6.7113543, y: 47.794094, z: 97.01942}
+    m_Value: {x: 20.430832, y: -21.720509, z: -29.571205}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -882,13 +882,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0019734118, y: 0.99805087, z: -0.04974727, w: -0.035001125}
+    m_Target: {x: -0.14191568, y: -0.07596627, z: 0.01052492, w: -0.9867407}
     speed: 2
-    m_Value: {x: -0.0020261244, y: 0.9980703, z: -0.051249176, w: -0.035001464}
+    m_Value: {x: -0.14193846, y: -0.075978465, z: 0.01052661, w: -0.98689914}
   m_Size:
-    m_Target: 0.5568597
+    m_Target: 132.093
     speed: 2
-    m_Value: 0.5568597
+    m_Value: 132.093
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1050,7 +1050,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefab
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1060,16 +1060,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\xaicdb1\Documents\GitHub\Chair-Kicking-Simulator
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 102}
-    m_SelectedIDs: c0cc0200
-    m_LastClickedID: 183488
-    m_ExpandedIDs: 00000000daca0200dcca0200deca0200e0ca0200e2ca020000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 162}
+    m_SelectedIDs: 8aaf0300
+    m_LastClickedID: 241546
+    m_ExpandedIDs: 00000000a8ad0300aaad0300acad0300aead0300b0ad030000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1097,7 +1097,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000daca0200dcca0200deca0200e0ca0200e2ca0200
+    m_ExpandedIDs: 00000000a8ad0300aaad0300acad0300aead0300b0ad0300
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1122,8 +1122,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 34bf0800
-    m_LastClickedInstanceID: 573236
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:

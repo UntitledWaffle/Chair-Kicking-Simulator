@@ -3,21 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class ObjectCounter : MonoBehaviour
 {
-    public static ObjectCounter instance;
-    private int objectCount;
+    private int chairCount;
     public string nextSceneName; // Set this in the Inspector
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void Start()
     {
@@ -27,16 +14,19 @@ public class ObjectCounter : MonoBehaviour
     public void CountObjects()
     {
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Chair");
-        objectCount = objects.Length;
+        chairCount = objects.Length;
+        Debug.Log("Total chairs in this level: " + chairCount);
     }
 
     public void RemoveObject()
     {
-        objectCount--;
+        chairCount--;
 
-        if (objectCount <= 0)
+        Debug.Log("Chairs remaining: " + chairCount);
+
+        if (chairCount <= 0)
         {
-            Debug.Log("You Win!");
+            Debug.Log("All chairs eliminated! Loading next level...");
             LoadNextScene();
         }
     }
