@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject PausePanel;
+    public PauseMenu pausemenu;
 
-
-    void Pause()
+    private void Start()
     {
-        PausePanel.SetActive(true);
-        Time.timeScale = 0;
+        {
+
+        }
     }
 
-    public void Continue()
+    private void Update()
     {
-        PausePanel.SetActive(false);
-        Time.timeScale = 1;
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            pausemenu.gameObject.SetActive(true);
+        }
     }
+
 }
