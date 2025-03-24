@@ -6,6 +6,7 @@ public class MenuManager : MonoBehaviour
 {
 
     public GameObject PauseMenu;
+    public GameObject FirstPersonController;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class MenuManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseMenu.SetActive(!PauseMenu.activeSelf);
+            GetComponent<FirstPersonController>().enabled = false;
         }
     }
 }
