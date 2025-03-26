@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Unity.VisualScripting;
+using GreatArcStudios;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -39,8 +40,9 @@ public class FirstPersonController : MonoBehaviour
     private float yaw = 0.0f;
     private float pitch = 0.0f;
     private Image crosshairObject;
-    
-        
+    public PauseManager pauseManager;
+
+
 
 
     #region Camera Zoom Variables
@@ -207,9 +209,25 @@ public class FirstPersonController : MonoBehaviour
     private void Update()
     {
         #region Camera
+        // Check if the game is paused
+        if (pauseManager != null && pauseManager.mainPanel.activeSelf)
+        {
+            // Disable camera movement and unlock the cursor
+            cameraCanMove = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;  // Optionally make the cursor visible when paused
+            return;  // Stop processing the rest of the camera logic
+        }
+        else
+        {
+            // Re-enable camera movement and lock the cursor when unpaused
+            cameraCanMove = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;  // Hide the cursor when not paused
+        }
 
         // Control camera movement
-        if(cameraCanMove)
+        if (cameraCanMove)
         {
             yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
 

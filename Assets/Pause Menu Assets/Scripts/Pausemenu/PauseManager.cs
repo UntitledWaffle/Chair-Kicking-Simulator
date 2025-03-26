@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.IO;
+using GreatArcStudios;
 //using UnityStandardAssets.ImageEffects;
 /// <summary>
 ///  Copyright (c) 2016 Eric Zhu 
@@ -252,10 +253,6 @@ namespace GreatArcStudios
         public static Terrain readSimpleTerrain;
 
         private SaveSettings saveSettings = new SaveSettings();
-
-        public bool cameraCanMove = false;
-
-
         /*
         //Color fade duration value
         //public float crossFadeDuration;
@@ -465,20 +462,6 @@ namespace GreatArcStudios
                 for (int i = 0; i < otherUIElements.Length; i++)
                 {
                     otherUIElements[i].gameObject.SetActive(false);
-                }
-                if (lockCursor)
-                {
-                    Cursor.lockState = CursorLockMode.Locked;
-                }
-
-                if (crosshair)
-                {
-                    crosshairObject.sprite = crosshairImage;
-                    crosshairObject.color = crosshairColor;
-                }
-                else
-                {
-                    crosshairObject.gameObject.SetActive(false);
                 }
                 /* if (blurBool == false)
                   {
