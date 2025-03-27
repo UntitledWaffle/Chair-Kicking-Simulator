@@ -16,6 +16,9 @@ namespace GreatArcStudios
     /// </summary>
     public class PauseManager : MonoBehaviour
     {
+        public GameObject PauseMenuManager;
+        public MonoBehaviour scriptToDisable;
+        private bool isPaused = false;
         /// <summary>
         /// This is the main panel holder, which holds the main panel and should be called "main panel"
         /// </summary> 
@@ -253,27 +256,8 @@ namespace GreatArcStudios
         public static Terrain readSimpleTerrain;
 
         private SaveSettings saveSettings = new SaveSettings();
-        /*
-        //Color fade duration value
-        //public float crossFadeDuration;
-        //custom color
-        //public Color _customColor;
-        
-         //Animation clips
-         private AnimationClip audioIn;
-         private AnimationClip audioOut;
-         public AnimationClip vidIn;
-         public AnimationClip vidOut;
-         public AnimationClip mainIn;
-         public AnimationClip mainOut; 
-          */
-        //Blur Variables
-        //Blur Effect Script (using the standard image effects package) 
-        //public Blur blurEffect;
-        //Blur Effect Shader (should be the one that came with the package)
-        //public Shader blurEffectShader;
-        //Boolean for if the blur effect was originally enabled
-        //public Boolean blurBool;
+
+ 
 
         /// <summary>
         /// The start method; you will need to place all of your inital value getting/setting here. 
@@ -371,6 +355,9 @@ namespace GreatArcStudios
         {
             Time.timeScale = timeScale;
 
+            PauseMenuManager.SetActive(false);
+            scriptToDisable.enabled = true;
+            isPaused = false;
             mainPanel.SetActive(false);
             vidPanel.SetActive(false);
             audioPanel.SetActive(false);
@@ -380,15 +367,6 @@ namespace GreatArcStudios
             {
                 otherUIElements[i].gameObject.SetActive(true);
             }
-            /* if (blurBool == false)
-             {
-                 blurEffect.enabled = false;
-             }
-             else
-             {
-                 //if you want to add in your own stuff do so here
-                 return;
-             } */
         }
         /// <summary>
         /// All the methods relating to qutting should be called here.
@@ -463,10 +441,7 @@ namespace GreatArcStudios
                 {
                     otherUIElements[i].gameObject.SetActive(false);
                 }
-                /* if (blurBool == false)
-                  {
-                     blurEffect.enabled = true;
-                 }  */
+
             }
             else if(Input.GetKeyDown(KeyCode.Escape) && mainPanel.active == true) {
                 Time.timeScale = timeScale;
@@ -481,23 +456,15 @@ namespace GreatArcStudios
                 }
             }
 
-
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (isPaused)
+                {
+                    Resume();
+                }
+            }
 
         }
-        /*
-        void colorCrossfade()
-        {
-            Debug.Log(pauseMenu.color);
-
-            if (pauseMenu.color == Color.white)
-            {
-                pauseMenu.CrossFadeColor(_customColor, crossFadeDuration, true, false);
-            }
-            else { 
-                pauseMenu.CrossFadeColor(Color.white, crossFadeDuration, true, false);
-            }
-        }  */
-        /////Audio Options
 
         /// <summary>
         /// Show the audio panel 
