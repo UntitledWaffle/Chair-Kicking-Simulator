@@ -1,10 +1,4 @@
-﻿// CHANGE LOG
-// 
-// CHANGES || version VERSION
-//
-// "Enable/Disable Headbob, Changed look rotations - should result in reduced camera jitters" || version 1.0.1
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,6 +35,7 @@ public class FirstPersonController : MonoBehaviour
     private float pitch = 0.0f;
     private Image crosshairObject;
     public PauseManager pauseManager;
+    public bool isPaused = false;
 
 
 
@@ -136,6 +131,7 @@ public class FirstPersonController : MonoBehaviour
     private float timer = 0;
 
     #endregion
+
 
     private void Awake()
     {
@@ -246,6 +242,16 @@ public class FirstPersonController : MonoBehaviour
 
             transform.localEulerAngles = new Vector3(0, yaw, 0);
             playerCamera.transform.localEulerAngles = new Vector3(pitch, 0, 0);
+        }
+
+        if (isPaused)
+            if (lockCursor)
+            {
+                Cursor.lockState = CursorLockMode.None;
+            }
+
+        {
+            return;
         }
 
         #region Camera Zoom

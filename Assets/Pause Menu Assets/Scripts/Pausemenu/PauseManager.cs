@@ -16,8 +16,6 @@ namespace GreatArcStudios
     /// </summary>
     public class PauseManager : MonoBehaviour
     {
-        public GameObject PauseMenuManager;
-        public MonoBehaviour scriptToDisable;
         private bool isPaused = false;
         /// <summary>
         /// This is the main panel holder, which holds the main panel and should be called "main panel"
@@ -354,9 +352,6 @@ namespace GreatArcStudios
         public void Resume()
         {
             Time.timeScale = timeScale;
-
-            PauseMenuManager.SetActive(false);
-            scriptToDisable.enabled = true;
             isPaused = false;
             mainPanel.SetActive(false);
             vidPanel.SetActive(false);
