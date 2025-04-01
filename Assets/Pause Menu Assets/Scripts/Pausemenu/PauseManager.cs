@@ -255,6 +255,9 @@ namespace GreatArcStudios
 
         private SaveSettings saveSettings = new SaveSettings();
 
+        public GameObject GravityGunProxy;
+        public FirstPersonController FirstPersonController;
+
  
 
         /// <summary>
@@ -346,6 +349,30 @@ namespace GreatArcStudios
             Application.LoadLevel(Application.loadedLevel);
             uiEventSystem.firstSelectedGameObject = defualtSelectedMain;
         }
+        public void OnApplicationPause(bool pause)
+        {
+if (pause) {
+                Time.timeScale = 0f; // Freeze game time
+
+                // Tell the player controller to stop processing input
+                if (FirstPersonController != null)
+                    FirstPersonController.isPaused = true;
+
+                // Unlock and show the cursor so the player can interact with the UI
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
+                // Show the pause UI elements
+                mainPanel.SetActive(true);
+                mask.SetActive(true);
+                uiEventSystem.SetSelectedGameObject(defualtSelectedMain);
+
+                // Disable the Gravity Gun Proxy so it won’t be used during pause
+                if (GravityGunProxy != null)
+                    GravityGunProxy.SetActive(false);
+
+            }
+        }
         /// <summary>
         /// Method to resume the game, so disable the pause menu and re-enable all other ui elements
         /// </summary>
@@ -362,6 +389,21 @@ namespace GreatArcStudios
             {
                 otherUIElements[i].gameObject.SetActive(true);
             }
+            // Re-enable player input
+            if (FirstPersonController != null)
+                FirstPersonController.isPaused = false;
+
+            // Lock and hide the cursor for gameplay
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+            // Hide the pause UI elements
+            mainPanel.SetActive(false);
+            mask.SetActive(false);
+
+            // Re-enable the Gravity Gun Proxy so the player can use it
+            if (GravityGunProxy != null)
+                GravityGunProxy.SetActive(true);
         }
         /// <summary>
         /// All the methods relating to qutting should be called here.
