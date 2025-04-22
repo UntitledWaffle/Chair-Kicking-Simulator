@@ -25,7 +25,9 @@ namespace SlimUI.ModernMenu{
 
 			if(isText){
 				message.GetComponent<TextMeshPro>().color = themeController.textColor;
-			}
+			} else if (isText){
+				message.GetComponent<TextMeshProUGUI>().color = themeController.textColor;
+			} 
 		}
 	}
 }

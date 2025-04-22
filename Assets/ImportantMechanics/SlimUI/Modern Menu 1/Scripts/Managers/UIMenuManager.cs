@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace SlimUI.ModernMenu{
 	public class UIMenuManager : MonoBehaviour {
-		private Animator CameraObject;
+		[SerializeField]private Animator CameraObject;
 
 		// campaign button sub menu
         [Header("MENUS")]
