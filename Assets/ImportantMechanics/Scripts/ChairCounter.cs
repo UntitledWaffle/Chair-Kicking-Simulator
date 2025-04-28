@@ -24,6 +24,14 @@ public class ObjectCounter : MonoBehaviour
 
         Debug.Log("Chairs remaining: " + chairCount);
 
+        if (Time.timeScale == 1f)
+        {
+            
+        } else if (Time.timeScale == 0f) 
+        {
+            return;
+        }
+
         if (chairCount <= 0)
         {
             Debug.Log("All chairs eliminated! Loading next level...");
