@@ -645,6 +645,8 @@ MonoBehaviour:
   crosshair: 1
   crosshairImage: {fileID: 21300000, guid: be4ce60e2c9768c44b9b10b9c5258045, type: 3}
   crosshairColor: {r: 1, g: 1, b: 1, a: 1}
+  pauseManager: {fileID: 0}
+  isPaused: 0
   enableZoom: 1
   holdToZoom: 1
   zoomKey: 102
@@ -747,6 +749,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.174
       objectReference: {fileID: 0}
+    - target: {fileID: 23748011377452396, guid: d74e9758dadacde4db03c197afeae262, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dc63438a59494f94ab119f299bcce777, type: 2}
     - target: {fileID: 114213265440653500, guid: d74e9758dadacde4db03c197afeae262, type: 3}
       propertyPath: aimCamera
       value: 
