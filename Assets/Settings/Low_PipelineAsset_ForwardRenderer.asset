@@ -23,8 +23,9 @@ MonoBehaviour:
     probeVolumeSamplingDebugShader: {fileID: 4800000, guid: 8f96cd657dc40064aa21efcc7e50a2e7, type: 3}
     probeSamplingDebugMesh: {fileID: -3555484719484374845, guid: 57d7c4c16e2765b47a4d2069b311bffe, type: 3}
     probeSamplingDebugTexture: {fileID: 2800000, guid: 24ec0e140fb444a44ab96ee80844e18e, type: 3}
-  m_RendererFeatures: []
-  m_RendererFeatureMap: 
+  m_RendererFeatures:
+  - {fileID: 7259711842428613682}
+  m_RendererFeatureMap: 3274a70375adbf64
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -64,3 +65,19 @@ MonoBehaviour:
   m_CopyDepthMode: 1
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &7259711842428613682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24344286f4c7b0c418a0ef46c3e930be, type: 3}
+  m_Name: ChunkyRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  ChunkyShader: {fileID: 4800000, guid: 021f74a6bc502364ea09233306e2eac2, type: 3}
+  SprTex: {fileID: 2800000, guid: e24d36d8ff948514689bd64ae291d616, type: 3}
+  Color: {r: 1, g: 1, b: 1, a: 1}
