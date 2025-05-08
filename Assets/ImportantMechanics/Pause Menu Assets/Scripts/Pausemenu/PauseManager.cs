@@ -376,6 +376,7 @@ if (pause) {
         /// <summary>
         /// Method to resume the game, so disable the pause menu and re-enable all other ui elements
         /// </summary>
+        
         public void Resume()
         {
             Time.timeScale = timeScale;
@@ -441,7 +442,6 @@ if (pause) {
             Application.LoadLevel(mainMenu);
             uiEventSystem.SetSelectedGameObject(defualtSelectedMain);
         }
-
         // Update is called once per frame
         /// <summary>
         /// The update method. This mainly searches for the user pressing the escape key.
@@ -480,7 +480,7 @@ if (pause) {
                 }
 
             }
-            else if(Input.GetKeyDown(KeyCode.Escape) && mainPanel.active == true) {
+            else if(Input.GetKeyDown(KeyCode.Escape) && mainPanel.active  == true) {
                 Time.timeScale = timeScale;
                 mainPanel.SetActive(false);
                 vidPanel.SetActive(false);
@@ -501,6 +501,13 @@ if (pause) {
                 }
             }
 
+            if ((vidPanel.active == true) && mainPanel.active == false) {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            } else if ((audioPanel == false) && mainPanel.active == false) {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
         }
 
         /// <summary>
@@ -726,8 +733,8 @@ if (pause) {
             modelQualSlider.value = QualitySettings.lodBias;
             renderDistSlider.value = mainCam.farClipPlane;
             shadowDistSlider.value = QualitySettings.shadowDistance;
-            masterTexSlider.value = QualitySettings.globalTextureMipmapLimit;
-            shadowCascadesSlider.value = QualitySettings.shadowCascades;
+            //masterTexSlider.value = QualitySettings.globalTextureMipmapLimit;
+            //shadowCascadesSlider.value = QualitySettings.shadowCascades;
             fullscreenToggle.isOn = Screen.fullScreen;
             aoToggle.isOn = aoBool;
             dofToggle.isOn = dofBool;
